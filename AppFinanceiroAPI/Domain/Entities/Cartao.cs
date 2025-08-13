@@ -8,7 +8,7 @@ namespace AppFinanceiroAPI.Domain.Entities
         public int Id { get; set; }
         public string Numero { get; set; }
         public BandeiraCartao Bandeira { get; set; }
-        public List<Transacao> Transacoes { get; set; }
+        public List<Transacao>? Transacoes { get; set; }
         [JsonIgnore]
         public ContaCorrente Conta { get; set; }
     }
